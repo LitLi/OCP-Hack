@@ -12,13 +12,6 @@ OCP-Hack项目是为参加OCP HackFest的伙伴准备的动手实验指导，主
 - [人脸认知服务在容器中实现](./Cognitive_Service_on_Container/README.md)
 - [基于LUIS的Voice Command创建](./Azure_LUIS/README.md)
 - [基于QnA Maker的问答机器人创建](./Azure_QnAMaker/README.md)
-=======
-- [基于Azure IoT Hub的远程监控](./Azure IoT Hub/README.md)
-- 基于Azure IoT Central的远程监控
-- 人脸认知服务在容器中实现
-- 基于LUIS的Voice Command创建
-- 基于QnA Maker的问答机器人创建
->>>>>>> 6e74d0b542eea257b127552168812aed4dd94094
 
 ## Azure订阅获取
 本项目的所有实验都会需要Azure订阅，由于使用到很多最新的Cognitive Services，建议伙伴申请或使用您的Azure海外（Azure.com)订阅。
