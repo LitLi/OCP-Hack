@@ -1,4 +1,6 @@
 # OCP-Hack
+![Banner](./Images/banner.jpg)
+
 OCP-Hack项目是为参加OCP HackFest的伙伴准备的动手实验指导，主要是帮助伙伴在Azure上快速了解和运用Azure IoT Services, Azure Cognitiver Services, Azure Machine Learning等。本项目会持续更新以方便伙伴学习到最新的Azure内容。
 
 ## 动手实验指导包括：
