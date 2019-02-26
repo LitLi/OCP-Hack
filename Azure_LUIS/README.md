@@ -12,15 +12,15 @@ Language Understanding Intelligent Services（简称LUIS），是Azure中用于�
 该样例需要使用[微软认知服务](https://azure.microsoft.com/zh-cn/services/cognitive-services/)中语义服务，需要申请免费使用账号或者购买Azure.com的订阅，Azure.com的试用账号可以参考[链接](http://www.cnblogs.com/meowmeow/p/7773226.html?from=groupmessage&isappinstalled=0)
 
 ## 创建语义应用 ##
-LUIS为开发者提供了定制化训练业务场景语义的工具，开发者可以自己独立完成语义应用的搭建和训练。访问[luis.ai](https://www.luis.ai)，使用已有的Azure订阅账号登陆。
+1 . LUIS为开发者提供了定制化训练业务场景语义的工具，开发者可以自己独立完成语义应用的搭建和训练。访问[luis.ai](https://www.luis.ai)，使用已有的Azure订阅账号登陆。
 ![注册登陆luis.ai](./images/image01.JPG)
 
-登陆LUIS门户后，进入MyApp页面，点击New App，创建你的LUIS应用，输入应用名称，语种（目前支持13种语言），应用的描述等信息。输入完成后点击创建。
+2 . 登陆LUIS门户后，进入MyApp页面，点击New App，创建你的LUIS应用，输入应用名称，语种（目前支持13种语言），应用的描述等信息。输入完成后点击创建。
 ![创建新应用](./images/image02.JPG)
 
 ![创建新应用](./images/image03.JPG)
 
-应用创建成功后，进入意图应用开发界面，界面功能介绍如下：
+3 . 应用创建成功后，进入意图应用开发界面，界面功能介绍如下：
 ![应用开发界面](./images/image04.JPG)
 
 
