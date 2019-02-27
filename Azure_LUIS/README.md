@@ -63,17 +63,21 @@ Language Understanding Intelligent Services（简称LUIS），是Azure中用于�
 13 . 登陆[Azure Portal](http://portal.azure.com)后， 点击创建，输入LUIS查询，结果中出现与LUIS相关的Azure服务，点击Language Understanding，然后点击Create。
 ![创建LUIS服务](./images/image12.JPG)
 14 . 在服务创建页面输入名称，选择服务的Location，选择价格，测试使用可以选择F0，免费服务， 选择资源组或者创建一个新的资源组，完成后点击下方的Create。
+
 <img width="500" height="450" src="./images/image13.JPG"/>
 15 . 创建完成后，回到[Luis.ai](http://luis.ai)，点击右上方的MANAGE菜单，进入应用设置管理界面，在左侧功能栏中，选择Keys and Endpoints， 进入密钥和Endpoint管理界面，缺省这里会提供一个Starter-Key，本教程为了给大家一个完整的正式发布流程，在这里增加我们刚刚创建的LUIS服务的密钥，选择Assign resource
+
 ![增加LUIS服务key](./images/image14.JPG)
 16 . 选择你的账户的租户名称，选择刚刚创建服务所在的订阅， 选择该订阅下面的需要增加的LUIS服务，点击Assign resource，系统会自动将LUIS的Key导入，并生成Endpoint。后面我们就可以发布应用了。**如果你刚刚创建的服务没有出现在下拉列表中，可以尝试重新登陆即可**
 
 <img width="600" height="500" src="./images/image15.JPG"/>
 
 17 . 点击右上方的“Publish”， 系统会发布刚刚的应用， 完成会会提示进入endpoint列表，也就是就进入16步中的列表，点击你的luis resource后面Endpoint链接。
+
 ![语义应用发布](./images/image16.JPG)
 
 18 . 点击Endpoint链接后，进入浏览器，可以直接在URL链接后面输入测试语料， 回车，就可以看到语义应用返回的Json结果
+
 ![语音应用Endpoint测试](./images/image17.JPG)
 ```json
 {
