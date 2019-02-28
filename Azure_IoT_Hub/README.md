@@ -47,7 +47,7 @@
 ### 1.设备注册
 - 运行CreateDeviceIdentity
 
-打开Visual Studio，依次点击”文件-打开-文件夹”，找到下载的位置，打开Azure_IoT_Hub/Code/CreateDeviceIdentity，并运行。
+打开Visual Studio，依次点击”文件-打开-文件夹”，找到下载的位置，打开[Azure_IoT_Hub/Code/CreateDeviceIdentity](./src/CreateDeviceIdentity)，并运行。
  
 ![Banner](./Images/5.png)
  
@@ -70,7 +70,7 @@
 
 ![Banner](./Images/10.png)
 
-并替换/Code/IoTDemoApp/Program.cs 中的 {iot hub hostname} 及 {device key}
+下载[IoTDempApp](./src/IoTDemoApp)并打开IoTDemoApp.sln, 替换/Code/IoTDemoApp/Program.cs 中的 {iot hub hostname} 及 {device key}
 
 ![Banner](./Images/2-2-2.png)
 
