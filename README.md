@@ -12,7 +12,7 @@ OCP-Hack项目是为参加OCP HackFest的伙伴准备的动手实验指导，主
 ## 动手实验
 - [基于Azure IoT Hub的远程监控](./Azure_IoT_Hub/README.md)
 - [基于Azure IoT Central的远程监控](./Azure_IoT_Central/README.md)
-- [人脸认知服务在容器中实现](./Cognitive_Service_on_Container/README.md)
+- [人脸认知服务在容器中实现](./Cognitive_Service_Face_on_Container/README.md)
 - [基于LUIS的Voice Command创建](./Azure_LUIS/README.md)
 - [基于QnA Maker的问答机器人创建](./Azure_QnAMaker/README.md)
 - [基于Azure Machine Learning的机器学习](./Azure_Machine_Learning/README.md)
