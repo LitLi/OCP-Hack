@@ -1,0 +1,11 @@
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\CreateDeviceIdentity\CreateDeviceIdentity\bin\Debug\netcoreapp2.1\CreateDeviceIdentity.deps.json
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\CreateDeviceIdentity\CreateDeviceIdentity\bin\Debug\netcoreapp2.1\CreateDeviceIdentity.runtimeconfig.json
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\CreateDeviceIdentity\CreateDeviceIdentity\bin\Debug\netcoreapp2.1\CreateDeviceIdentity.runtimeconfig.dev.json
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\CreateDeviceIdentity\CreateDeviceIdentity\bin\Debug\netcoreapp2.1\CreateDeviceIdentity.dll
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\CreateDeviceIdentity\CreateDeviceIdentity\obj\Debug\netcoreapp2.1\CreateDeviceIdentity.csprojAssemblyReference.cache
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\CreateDeviceIdentity\CreateDeviceIdentity\obj\Debug\netcoreapp2.1\CreateDeviceIdentity.csproj.CoreCompileInputs.cache
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\CreateDeviceIdentity\CreateDeviceIdentity\obj\Debug\netcoreapp2.1\CreateDeviceIdentity.AssemblyInfoInputs.cache
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\CreateDeviceIdentity\CreateDeviceIdentity\obj\Debug\netcoreapp2.1\CreateDeviceIdentity.AssemblyInfo.cs
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\CreateDeviceIdentity\CreateDeviceIdentity\bin\Debug\netcoreapp2.1\CreateDeviceIdentity.pdb
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\CreateDeviceIdentity\CreateDeviceIdentity\obj\Debug\netcoreapp2.1\CreateDeviceIdentity.dll
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\CreateDeviceIdentity\CreateDeviceIdentity\obj\Debug\netcoreapp2.1\CreateDeviceIdentity.pdb

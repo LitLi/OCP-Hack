@@ -1,0 +1,11 @@
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\IoTDemoApp\IoTDemoApp\bin\Debug\netcoreapp2.1\IoTDemoApp.deps.json
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\IoTDemoApp\IoTDemoApp\bin\Debug\netcoreapp2.1\IoTDemoApp.runtimeconfig.json
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\IoTDemoApp\IoTDemoApp\bin\Debug\netcoreapp2.1\IoTDemoApp.runtimeconfig.dev.json
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\IoTDemoApp\IoTDemoApp\bin\Debug\netcoreapp2.1\IoTDemoApp.dll
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\IoTDemoApp\IoTDemoApp\obj\Debug\netcoreapp2.1\IoTDemoApp.csprojAssemblyReference.cache
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\IoTDemoApp\IoTDemoApp\obj\Debug\netcoreapp2.1\IoTDemoApp.csproj.CoreCompileInputs.cache
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\IoTDemoApp\IoTDemoApp\obj\Debug\netcoreapp2.1\IoTDemoApp.AssemblyInfoInputs.cache
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\IoTDemoApp\IoTDemoApp\obj\Debug\netcoreapp2.1\IoTDemoApp.AssemblyInfo.cs
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\IoTDemoApp\IoTDemoApp\bin\Debug\netcoreapp2.1\IoTDemoApp.pdb
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\IoTDemoApp\IoTDemoApp\obj\Debug\netcoreapp2.1\IoTDemoApp.dll
+C:\Users\wazhi\Downloads\Code\OCP-Hack\OCP-Hack-master\Azure_IoT_Hub\Code\IoTDemoApp\IoTDemoApp\obj\Debug\netcoreapp2.1\IoTDemoApp.pdb
