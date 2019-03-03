@@ -6655,11 +6655,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wazhi\\Downloads\\Code\\OCP-Hack\\OCP-Hack-master\\Azure_IoT_Hub\\Code\\IoTDemoApp\\IoTDemoApp\\IoTDemoApp.csproj",
+      "projectUniqueName": "C:\\Users\\wazhi\\Downloads\\Code\\OCP-Hack\\OCP-Hack-master\\Azure_IoT_Hub\\src\\IoTDemoApp\\IoTDemoApp\\IoTDemoApp.csproj",
       "projectName": "IoTDemoApp",
-      "projectPath": "C:\\Users\\wazhi\\Downloads\\Code\\OCP-Hack\\OCP-Hack-master\\Azure_IoT_Hub\\Code\\IoTDemoApp\\IoTDemoApp\\IoTDemoApp.csproj",
+      "projectPath": "C:\\Users\\wazhi\\Downloads\\Code\\OCP-Hack\\OCP-Hack-master\\Azure_IoT_Hub\\src\\IoTDemoApp\\IoTDemoApp\\IoTDemoApp.csproj",
       "packagesPath": "C:\\Users\\wazhi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wazhi\\Downloads\\Code\\OCP-Hack\\OCP-Hack-master\\Azure_IoT_Hub\\Code\\IoTDemoApp\\IoTDemoApp\\obj\\",
+      "outputPath": "C:\\Users\\wazhi\\Downloads\\Code\\OCP-Hack\\OCP-Hack-master\\Azure_IoT_Hub\\src\\IoTDemoApp\\IoTDemoApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
