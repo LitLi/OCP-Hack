@@ -52,7 +52,7 @@ Azure Machine Learning Studio是微软Azure上一个开箱即用的机器学习S
     - capital-loss 
     - native-country 
   
-![排除无关特征](./images/image01.PNG)
+![排除无关特征](./images/image01.png)
 
 7. 在实验中拖入一个 **Normalize Data** 模块，并将 **Select Columns in Dataset** 模块的输出端连到这个模块的输入端。
 8. 把 **Normalize Data** 模块的属性按如下设置：
@@ -72,7 +72,7 @@ Azure Machine Learning Studio是微软Azure上一个开箱即用的机器学习S
 
 11. 确保您的实验跟下图一致，然后保存并运行实验:
 
-![分类验证1](./images/image02.PNG)
+![分类验证1](./images/image02.png)
 
 12. 实验运行结束后，在 **Edit Metadata** 模块的输出端右键选择 Results Dataset-> Visualize ，验证如下结果：
      
@@ -110,12 +110,12 @@ Azure Machine Learning Studio是微软Azure上一个开箱即用的机器学习S
 9.	在实验中拖入一个 **Evaluate Model** 模块，并把 **Score model** 模块的输出端连到 **Evaluate Model** 模块的左边输入端 **Scored dataset** 。
 10.	确保您的实验与下图一致，然后保存并运行实验。 
 
-![分类验证2](./images/image03.PNG)
+![分类验证2](./images/image03.png)
 
 11.	实验运行结束后，在 **Score Model** 模块的输出端右键选中 Visualize ，并比较在 **Scored Labels** 列中的预测结果和在测试数据集中 **income** 列的原始真值间的异同。
 12.	可视化 **Evaluate Model** 模块的输出结果，并检查ROC曲线（如下图）。曲线下的面积（由AUC值表示）越大，分类模型的预测能力越强。然后检查模型的 **Accuracy** 值. 是否在0.82左右。这表明该分类模型有82%的机会预测是正确的。对于一个初始模型来说，这个数字还不错。 
 
-![ROC曲线](./images/image04.PNG)
+![ROC曲线](./images/image04.png)
 
 
 ### 把模型发布成一个Web服务 ###
@@ -123,14 +123,14 @@ Azure Machine Learning Studio是微软Azure上一个开箱即用的机器学习S
 1.	在Adult Income Classification实验打开的状态下，点击页面下方的 **SET UP WEB SERVICE** 图标，并点击 **Predictive Web Service [Recommended]** 。 一个新的预测性实验的标签页会自动创建出来。 
 2.	预测性实验会有些许重新布局。确保这个实验与下图类似: 
 
-![预测性实验1](./images/image05.PNG)
+![预测性实验1](./images/image05.png)
 
 3.	删除 **Score Model** 模块和 **Web service output** 模块之间的连线。 
 4.	在实验中拖入一个 **Select Columns in Dataset** 模块，把 **Score Model** 模块的输出端连到它的输入端。然后把 **Select Columns in Dataset** 模块的输出端连到 **Web service output** 模块的输入端。 
 5.	选中 **Select Columns in Dataset** 模块，在属性面板上点击 **Launch column selector** ，只选择 **Scored Labels** 这一个列。这一步是为了让这个Web服务被调用时，仅仅返回预测的值。
 6.	确保当前的预测性实验看上去与下图类似，然后保存并运行这个预测性实验：
 
-![预测性实验2](./images/image06.PNG)
+![预测性实验2](./images/image06.png)
 
 7.	实验运行结束后，把最后一个 **Select Columns in Dataset** 模块的输出可视化，验证是否仅有 **Scored Labels** 列被返回了。
 
@@ -140,7 +140,7 @@ Azure Machine Learning Studio是微软Azure上一个开箱即用的机器学习S
 1.	在 Adult Income Classification [Predictive Exp.] 实验中，点击窗口下方的 **Deploy Web Service** 图标。
 2.	当仪表板页面出现后，注意这里的 **API key** 和 **Request/Response** 链接。稍后您将要用到这些信息以便从一个客户端应用调用这个 Web 服务。
 
-![部署服务仪表板](./images/image07.PNG)
+![部署服务仪表板](./images/image07.png)
 
 3.	在浏览器中，保持仪表盘页面的打开状态。并新建一个浏览器标签页。
 4.	在新的浏览器标签页上，导航到 https://office.live.com/start/Excel.aspx。
@@ -148,14 +148,14 @@ Azure Machine Learning Studio是微软Azure上一个开箱即用的机器学习S
 5.	在 Excel Online 中新建一个空白的工作簿。  
 6.	在 **Insert** 标签，点击 **Office Add-ins** 。然后在 **Office Add-ins** 对话框中，选择 **Store** ，搜索 Azure Machine Learning ，然后把 **Azure Machine Learning** 插件添加进来，如下图：
 
-![Office插件](./images/image08.PNG)
+![Office插件](./images/image08.png)
 
 7.	插件安装以后，在 Excel 工作簿右侧的 **Azure Machine Learning** 面板上，点击 **Add Web Service** ，用于输入Web服务的 URL 和 API key 的输入框就出现了。 
 8.	在浏览器中切换到打开着 Azure Machine Learning Web 服务的仪表板的那个标签页面，在 **Request/Response** 链接上右键将 Web 服务的 URL 保存到剪贴板，然后切换回打开着 Excel Online 工作簿的那个标签页面，把 URL 复制到对应的输入框。
 9.	重复上一步的流程，但这次我们把 Azure 机器学习 Web 服务的 **API key** 复制到 Excel Online 工作簿中对应的 API key 输入框。 
 10.	确保工作簿中 Azure Machine Learning 面板上的信息与下图类似，然后点击下方的 **Add** ： 
 
-![AML面板](./images/image09.PNG)
+![AML面板](./images/image09.png)
 
 11.	Web 服务添加之后，在 Azure Machine Learning 面板上点击 **1. View Schema** 。 观察 Web 服务所需要的输入格式及其输出。
 12.	在 Excel 的工作表中选中单元格 A1 。然后在 Azure Machine Learning 面板，收起 **1. View Schema** 部分，并在 **2. Predict** 部分点击 **Use sample data** 。一些样本输入就被添加到了工作表上。
@@ -204,11 +204,11 @@ Azure Machine Learning Studio是微软Azure上一个开箱即用的机器学习S
     - **Use 0 for constant columns when checked**: 不选
     - **Columns to transform**: 包含所有除 **lnprice** 外的数值型的列，如下图：
 
-![规范化排除lnprice](./images/image10.PNG)
+![规范化排除lnprice](./images/image10.png)
 
 9.	您的实验看起来应与下图类似： 
 
-![回归数据准备](./images/image11.PNG)
+![回归数据准备](./images/image11.png)
 
 10.	保存实验并运行。在 **Normalize Data** 模块的左边输出端 **Transformed dataset** 选择 Visualize ，观察变换后的数据。
 
@@ -245,11 +245,11 @@ Azure Machine Learning Studio是微软Azure上一个开箱即用的机器学习S
 7.	在实验中拖入一个 **Evaluate Model** 模块，并且把 **Score model** 模块的输出端连到 **Evaluate Model** 模块的左边输入端 **Scored dataset** 。
 8.	确保您的实验的下半部分与下图类似，然后保存并运行这个实验。
 
-![回归实验下半部分](./images/image12.PNG)
+![回归实验下半部分](./images/image12.png)
 
 9.	实验运行结束后，在 **Score Model** 模块的输出端右键选择 Visualize 。先选择 **Scored Labels** 列，然后在 **compare to** 下拉框中选择 **lnprice** ，生成的散点图看起来应与下图类似：
 
-![回归预测散点图](./images/image13.PNG)
+![回归预测散点图](./images/image13.png)
 
 **说明**：**Scored Label** 和 **lnprice** 的值，基本上会落在一条虚拟的对角直线上，周围略有一些散点。这表明模型的拟合良好。
 
@@ -261,7 +261,7 @@ Azure Machine Learning Studio是微软Azure上一个开箱即用的机器学习S
 1.	在 Autos 实验打开的状态下，点击Azure Machine Learning Studio页面下方的 **SET UP WEB SERVICE** 图标，并点击 **Predictive Web Service [Recommended]** ，一个新的 **Predictive Experiment** 的标签页面就被自动创建出来了。
 2.	经过些许重新布局之后，您的 **Predictive Experiment** 看起来和下图类似：
 
-![回归预测性实验](./images/image14.PNG)
+![回归预测性实验](./images/image14.png)
 
 **说明**：这个 Web 服务当前除了返回预测的标签之外，也返回所有其它的数据列。您需要修改预测性模型，使其仅仅返回预测的售价。然而，本模型中所预测得到的数值标签，其实是汽车售价的自然对数。所以您还需要将其转换回真正的价格。
 
@@ -275,7 +275,7 @@ Azure Machine Learning Studio是微软Azure上一个开箱即用的机器学习S
  
 6.	确保预测性实验看起来和下图类似，然后保存和运行预测性实验。
 
-![回归预测性实验V2](./images/image15.PNG)
+![回归预测性实验V2](./images/image15.png)
 
 7.	实验运行结束后，在 **Apply Math Operation** 模块的输出端右键点击 Results Dataset-> Visualize ，确保返回的预测结果是售价。
 
@@ -328,12 +328,12 @@ Azure Machine Learning Studio是微软Azure上一个开箱即用的机器学习S
 2.	在实验页面的底部，点击 **Save As** 创建当前实验的一个副本，并命名为 Adult Income Clustering 。
 3.	在新的实验中，删除除下列模块以外的所有其它模块：
 
-![聚类分析保留的模块](./images/image16.PNG)
+![聚类分析保留的模块](./images/image16.png)
 
 4.	在实验中拖入一个 **Convert to Indicator Values** 模块，并把 **Edit Metadata** 模块的输出端连到它的输入端。
 5.	把 **Convert to Indicator Values** 模块的属性设置为选择所有的分类特征，如下图所示：
 
-![分类特征转换为指示器](./images/image17.PNG)
+![分类特征转换为指示器](./images/image17.png)
 
 6.	在 **Convert to Indicator Values** 模块的属性中，勾选 **Overwrite Categorical Columns** 选项。
 7.	保存并运行当前实验。实验结束运行后，在 **Convert to Indicator Values** 模块的输出端右键选择 Visualize ，可以观察到数据集中的所有分类特征现在都被表示为在每个分类值上取 0 或 1 的数值型的指示器特征。这种数据集的结构可以使得聚类算法更有效。
@@ -358,11 +358,11 @@ Azure Machine Learning Studio是微软Azure上一个开箱即用的机器学习S
 5.	设置 **Select Columns in Dataset** 模块的属性，使其选择所有特征。
 6.	确保您的实验看起来与下图类似。然后保存并运行当前的实验。
 
-![完整聚类模型](./images/image18.PNG)
+![完整聚类模型](./images/image18.png)
 
 7.	实验运行结束后，在 **Train Clustering Model** 模块的右边输出端 **Results** 右键选择 Visualize ，可以观察到产生了两个簇，类似于下图：
 
-![两个簇的聚类结果](./images/image19.PNG)
+![两个簇的聚类结果](./images/image19.png)
 
 8.	把 **Select Columns in Dataset** 模块的输出端右键选择 Visualize ，可以观察到在表格的从右往左数第三列是 **Assignments** 列，代表了两个簇的编号 {0,1} 。图表展现了被分配到每一个簇的普查人口的比例。有趣的是，簇的分配与收入的高低分类状况不是太一致。这表明数据集当中存在着某些复杂的特征组合表征着数据个体的差异。如果要探索这些影响聚类的特征的分布情况，您可以把数据集导出，并在其它的数据分析工具（例如 Excel ）或者数据分析语言（例如 Python 和 R ）进一步的探索性分析。
 
