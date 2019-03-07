@@ -1,17 +1,13 @@
 # 基于QnA Maker的问答机器人
-这个实验会介绍如何使用QnAMaker轻松创建一个问答帮助机器人的服务，并使用Azure Bot Services集成该QnA服务实现一个可以在Skype/Web沟通的机器人样例。本样例主要包括以下几部分内容：
+这个实验会介绍如何使用QnAMaker轻松创建一个问答帮助机器人的服务，Azure Bot SDK集成该QnA服务实现一个可以沟通的机器人样例。本样例主要包括以下几部分内容：
 - 创建QnA服务
-- 创建问答机器人Bot Service
 - 集成开发问答机器人QnA服务
-- 注册发布问答机器人
-- 测试问答机器人
+- 本地测试问答机器人
   
 ## 实验条件
 1. 需要有Microsoft Azure国际版订阅
 2. 需要下载[Bot Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases/tag/v4.3.0)
 3. 需要[Visual Studios 2017](https://visualstudio.microsoft.com/zh-hans/downloads/?rr=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fbot-service%2Fbot-builder-tutorial-basic-deploy%3Fview%3Dazure-bot-service-4.0%26tabs%3Dcsharp)以上版本
-4. 需要下载[MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot)
-5. 该实验的服务都创建在同一个资源组，以方便后面做管理
 
 
 ## 创建QnA服务
@@ -36,37 +32,27 @@ QnAMaker可以让开发者使用FAQ URL，FAQ文件或者手工录入问题答�
 6. 训练和测试完成后，可以点击Publish，发布应用，发布成功后需要保存其中的**Knowledge BaseID，Endpoint key，和hostname**，后面会用到。
 
    <img width="600" height="350" src="./images/image107.JPG"/>
-创建好QnA查询服务，就可以开始创建Bot Services。
+创建好QnA查询服务，就可以开始开发问答机器人了。
 
-## 创建问答机器人Bot Services
-通过创建Bot Services生成问答机器人服务，下载问答机器人项目源码，以进行后续QNA服务集成开发。
-1. 使用Azure订阅账号登陆[Azure Portal](http://portal.azure.com)，选择+，创建资源，搜索web app bot，选择搜索出来的web app bot服务，点击Create。
-   <img width="300" height="280" src="./images/image201.JPG"/>
-2. 输入Bot名字，资源组，选择定价，部署地理位置等，其中价格可以选择S1，Bot Template选Basic Bot(C#)；选择自动创建app id和password，本实验不需要监控Bot的服务的使用情况，可以将App Insights服务Disable，点击Create。
-   <img width="600" height="500" src="./images/image202.JPG"/>
-3. 创建成功，进入Bot Service，点击Test in web chat， 可以测试该Bot服务情况，这是一个回音BOT，输入“你好”，回复“You sent ‘你好’”。
-    <img width="600" height="400" src="./images/image203.JPG"/>
-4. 点击Build，进入Build页面，选择Download Bot source code，选择将.ZIP文件保存到你的本地文件目录，并解压缩。
-   <img width="600" height="400" src="./images/image204.JPG"/>
-5. 点击application Settings，然后点击botFilePath和botFielSecret，保持这两个信息。后面会用到。
-   <img width="600" height="400" src="./images/image205.JPG"/>
-   
-   后面我们就可以开始将QnA服务集成到问答机器人代码中。
+## 创建问答机器人QnaBot
+这里我们将使用微软Bot Sample中的QnaBot的样例，实现与之前创建的QnA服务集成，实现问答机器人。
+1. Clone或者Download [BothSample](https://github.com/Microsoft/BotBuilder-Samples/blob/master/README.md)的ZIP文件。
+2. 在本地的\BotBuilder-Samples\samples\csharp_dotnetcore\11.qnamaker目录下，双击**QnABot.csproj**文件，在Visual Studio中打开。
+3. 修改\BotBuilder-Samples\samples\csharp_dotnetcore\11.qnamaker目录下的Qnamaker.bot文件，将上一步中我们创建的KBID， EndpointKey，和hostname等信息，填入.Bot文件，其中还有一个subscriptionKey就是你创建QnA Maker Service是的订阅ID，可以在Azure Portal里面all Services下面的Subscription信息里可以找到。全部填入这个配置文件中。保存。
+   <img width="600" height="250" src="./images/image201.JPG"/>
+**Note：如果你修改了name属性，请务必将QnABot.cs下面的QnAMakerKey修改成同名**
+4. 修改完成，保存，F5启动QnABot本地服务，启动后，自动弹出浏览器显示如下：
+   <img width="600" height="330" src="./images/image202.JPG"/>
+本地QnaBot运行起来，我们可以使用Bot Emulator进行测试，看看我们的问答机器人是否可以回答我们之前在QnA Knowledge Base中的问题。
 
-## 集成开发问答机器人QnA服务
-这里首先，我们将刚刚创建的回音的机器人，在本地做编辑并在emulator中测试，然后现在我们将QNA服务集成进去，让它可以变成一个问答机器人。
-1. 点击解压目录下的****.sln文件，在Visual Studio中打开。点击applsetting.json，将上面5步中的botFilePath和botFielSecret复制到这里。
-   ```
-   {
-    "botFilePath": "You can find the botFilePath and botFileSecret in the Azure App Service application settings",
-    "botFileSecret": "You can find the botFilePath and botFileSecret in the Azure App Service application settings"
-    }
-   ```
-2. 保存，然后F5进行编译和运行。成功后，会自动弹出web页面显示服务在本地启动。
-   <img width="600" height="350" src="./images/image301.JPG"/>
-3. 启动实验开始时下载好的Emulator，然后选择OPEN BOT,选择问答机器人工程项目目录下的.bot文件，第一需要输入bot secret，将之前保存的bot secret录入，并选择submit。
-   <img width="600" height="350" src="./images/image302.JPG"/>
-   <img width="600" height="350" src="./images/image303.JPG"/>
-4. Emulator连接本地回音机器人成功后，会在右侧log栏中输出连接成功日志信息。可以输入“你好”做测试。
-   <img width="600" height="350" src="./images/image304.JPG"/>
-5. 
+## 本地测试问答机器人
+1. 打开在**实验条件**中下载下来的Bot Emulator， 点击Open Bot，Browser到上面创建好的\BotBuilder-Samples\samples\csharp_dotnetcore\11.qnamaker目录下，选择Qnamaker.bot文件，点击Connect
+   <img width="600" height="330" src="./images/image301.JPG"/>
+2. 右下方的日志栏会提示连接成功，中间对话栏会弹出提示对话，这时候我们可以输入测试问题，比如“打印产品不光滑”，看看问答机器人是否可以正确给我们返回响应。
+   <img width="600" height="330" src="./images/image302.JPG"/>
+官网的QnAmaker的样例中，返回时提供了QnA Trace消息，可以查看到问题的答案的置信度等信息。
+
+
+## 总结
+本实验主要是利用QnA Maker服务和Bot Sample中QnABot的样例，让大家可以简单体验一个问答机器人的开发。后面我们会基于这个实验，完成将问答机器人部署到云端的工作。
+
