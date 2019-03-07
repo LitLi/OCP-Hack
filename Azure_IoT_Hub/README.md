@@ -90,7 +90,7 @@
 
 为流分析作业输入名称，并选择使用现有资源组，然后点击“创建”按钮，如下图所示：
 
-![Banner](./Images/3-1-2.png)
+<img width="300" height="700" src="./Images/3-1-2.png"/>
 
 ### 2.配置Stream Analytics Job输入
 等待Stream Analytics Job创建好以后，点击“输入”。点击“添加”按钮，如图所示：
@@ -98,7 +98,9 @@
 
 然后输入如下信息，点击“保存”：
 
-![Banner](./Images/3-2-1.png)
+<img width="400" height="700" src="./Images/3-2-1.png"/>
+
+
 
 ### 3.配置Stream Analytics Job输出
 
@@ -117,7 +119,7 @@
 
 关闭存储账户配置界面，在Azure管理门户中打开之前所创建的Stream Analytics Job，点击“输出”，然后点击“+添加 - Blob存储”按钮。输入如下信息，然后点击“保存”：
 
-![Banner](./Images/3-2-5.png)
+<img width="400" height="800" src="./Images/3-2-5.png"/>
 
 ### 4.配置Stream Analytics Job查询
 在创建好的Stream Analytics Job中点击“查询”，然后输入如下查询语句，并点击“保存“：
@@ -152,8 +154,10 @@ TumblingWindow(Second, 10)
 
 输入存储账户的密钥，然后点击“Connect”，如下图所示：
 
-![Banner](./Images/4-1-3.png)
+<img width="250" height="500" src="./Images/4-1-3.png"/>
+
 勾选对应的容器，然后点击“Load”按钮，如下图所示：
+
 ![Banner](./Images/4-1-4.png)
 
 点击右侧数据边的“...”，再单击“编辑查询”：
@@ -168,6 +172,7 @@ TumblingWindow(Second, 10)
 选择折线图展示数据，其中横轴为时间字段，对应的数值为平均风速、平均温度以及平均湿度，最终的展示结果如下图所示：
 
 ![Banner](./Images/4-1-6.png)
+
 
 
 ## 附：安装Power BI Desktop
