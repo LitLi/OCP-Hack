@@ -50,7 +50,8 @@ QnAMaker可以让开发者使用FAQ URL，FAQ文件或者手工录入问题答�
    <img width="600" height="330" src="./images/image301.JPG"/>
 2. 右下方的日志栏会提示连接成功，中间对话栏会弹出提示对话，这时候我们可以输入测试问题，比如“打印产品不光滑”，看看问答机器人是否可以正确给我们返回响应。
    <img width="600" height="330" src="./images/image302.JPG"/>
-官网的QnAmaker的样例中，返回时提供了QnA Trace消息，可以查看到问题的答案的置信度等信息。
+
+    官网的QnAmaker的样例中，返回时提供了QnA Trace消息，可以查看到问题的答案的置信度等信息。
 
 
 ## 总结
