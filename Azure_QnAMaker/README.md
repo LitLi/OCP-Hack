@@ -10,7 +10,8 @@
 1. 需要有Microsoft Azure国际版订阅
 2. 需要下载[Bot Emulator](https://github.com/Microsoft/BotFramework-Emulator/releases/tag/v4.3.0)
 3. 需要[Visual Studios 2017](https://visualstudio.microsoft.com/zh-hans/downloads/?rr=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fbot-service%2Fbot-builder-tutorial-basic-deploy%3Fview%3Dazure-bot-service-4.0%26tabs%3Dcsharp)以上版本
-4. 该实验的服务都创建在同一个资源组，以方便后面做管理
+4. 需要下载[MSBot](https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot)
+5. 该实验的服务都创建在同一个资源组，以方便后面做管理
 
 
 ## 创建QnA服务
