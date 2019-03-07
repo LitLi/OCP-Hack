@@ -41,7 +41,7 @@ QnAMaker可以让开发者使用FAQ URL，FAQ文件或者手工录入问题答�
 通过创建Bot Services生成问答机器人服务，下载问答机器人项目源码，以进行后续QNA服务集成开发。
 1. 使用Azure订阅账号登陆[Azure Portal](http://portal.azure.com)，选择+，创建资源，搜索web app bot，选择搜索出来的web app bot服务，点击Create。
    <img width="300" height="280" src="./images/image201.JPG"/>
-2. 输入Bot名字，资源组，选择定价，部署地理位置等，其中价格可以选择S1，Bot Template选Ecoh Bot(C#)；本实验不需要监控Bot的服务的使用情况，可以将App Insights服务Disable，点击Create。
+2. 输入Bot名字，资源组，选择定价，部署地理位置等，其中价格可以选择S1，Bot Template选Basic Bot(C#)；选择自动创建app id和password，本实验不需要监控Bot的服务的使用情况，可以将App Insights服务Disable，点击Create。
    <img width="600" height="500" src="./images/image202.JPG"/>
 3. 创建成功，进入Bot Service，点击Test in web chat， 可以测试该Bot服务情况，这是一个回音BOT，输入“你好”，回复“You sent ‘你好’”。
     <img width="600" height="400" src="./images/image203.JPG"/>
